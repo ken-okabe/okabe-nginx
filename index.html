@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+  <title>fx-futures-chart</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="./css/index.css" rel="stylesheet">
+
+
+  <!-- Just for debugging purposes. Don't actually copy this line! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div id="label">
+    <div id="pair"></div>
+    <div id="rev"></div>
+    <div id="period"></div>
+    <div id="time"></div>
+  </div>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs">
+   <li class="active"><a href="#clock" data-toggle="tab">WorldClok</a>
+   </li>
+    <li><a href="#WEEK" data-toggle="tab">WEEK</a>
+    </li>
+    <li><a href="#DAY" data-toggle="tab">DAY</a>
+    </li>
+    <li><a href="#M30" data-toggle="tab">30Min</a>
+    </li>
+
+    <li><a href="#about" data-toggle="tab">About okabe.xyz</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+
+    <div class="tab-pane active" id="clock">
+
+
+      <div class="table">
+        <div class="cell">
+          <p>
+            NewYork
+          </p>
+          <ul class="clock">
+            <li class="sec"></li>
+            <li class="hour"></li>
+            <li class="min"></li>
+          </ul>
+
+          <p>
+            ----
+          </p>
+          <p>
+            ----
+          </p>
+        </div>
+        <div class="cell">
+          <p>
+            London
+          </p>
+          <ul class="clock">
+            <li class="sec"></li>
+            <li class="hour"></li>
+            <li class="min"></li>
+          </ul>
+
+          <p>
+            ----
+          </p>
+          <p>
+            ----
+          </p>
+        </div>
+        <div class="cell">
+          <p>
+            London+2(FX offset)
+          </p>
+          <ul class="clock">
+            <li class="sec"></li>
+            <li class="hour"></li>
+            <li class="min"></li>
+          </ul>
+
+          <p>
+            ----
+          </p>
+          <p>
+            ----
+          </p>
+        </div>
+        <div class="cell">
+          <p>
+            Tokyo
+          </p>
+          <ul class="clock">
+            <li class="sec"></li>
+            <li class="hour"></li>
+            <li class="min"></li>
+          </ul>
+
+          <p>
+            ----
+          </p>
+          <p>
+            ----
+          </p>
+        </div>
+      </div>
+
+
+
+    </div>
+    <div class="tab-pane" id="WEEK">
+
+      <ul class="nav nav-tabs">
+
+        <li><a href="#DIXweek" data-toggle="tab">USD Index (W)</a>
+        </li>
+        <li><a href="#EURUSDweek" data-toggle="tab">EURUSD (W)</a>
+        </li>
+        <li><a href="#JPYUSDweek" data-toggle="tab">JPYUSD (W)</a>
+        </li>
+        <li><a href="#GBPUSDweek" data-toggle="tab">GBPUSD (W)</a>
+        </li>
+        <li><a href="#CHFUSDweek" data-toggle="tab">CHFUSD (W)</a>
+        </li>
+        <li><a href="#AUDUSDweek" data-toggle="tab">AUDUSD (W)</a>
+        </li>
+        <li><a href="#CADUSDweek" data-toggle="tab">CADUSD (W)</a>
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane" id="DIXweek">DIXw</div>
+        <div class="tab-pane" id="EURUSDweek">EURUSDw</div>
+        <div class="tab-pane" id="JPYUSDweek">JPYUSDw</div>
+        <div class="tab-pane" id="GBPUSDweek">GBPUSDw</div>
+        <div class="tab-pane" id="CHFUSDweek">CHFUSDw</div>
+        <div class="tab-pane" id="AUDUSDweek">AUDUSDw</div>
+        <div class="tab-pane" id="CADUSDweek">CADUSDw</div>
+      </div>
+
+    </div>
+    <div class="tab-pane" id="DAY">
+
+      <ul class="nav nav-tabs">
+
+        <li><a href="#DIXday" data-toggle="tab">USD Index (D)</a>
+        </li>
+        <li><a href="#EURUSDday" data-toggle="tab">EURUSD (D)</a>
+        </li>
+        <li><a href="#JPYUSDday" data-toggle="tab">JPYUSD (D)</a>
+        </li>
+        <li><a href="#GBPUSDday" data-toggle="tab">GBPUSD (D)</a>
+        </li>
+        <li><a href="#CHFUSDday" data-toggle="tab">CHFUSD (D)</a>
+        </li>
+        <li><a href="#AUDUSDday" data-toggle="tab">AUDUSD (D)</a>
+        </li>
+        <li><a href="#CADUSDday" data-toggle="tab">CADUSD (D)</a>
+        </li>
+
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane" id="DIXday">DIX</div>
+        <div class="tab-pane" id="EURUSDday">EURUSD</div>
+        <div class="tab-pane" id="JPYUSDday">JPYUSD</div>
+        <div class="tab-pane" id="GBPUSDday">GBPUSD</div>
+        <div class="tab-pane" id="CHFUSDday">CHFUSD</div>
+        <div class="tab-pane" id="AUDUSDday">AUDUSD</div>
+        <div class="tab-pane" id="CADUSDday">CADUSD</div>
+
+      </div>
+
+    </div>
+
+    <div class="tab-pane" id="M30">
+
+      <ul class="nav nav-tabs">
+        <li><a href="#DIX30" data-toggle="tab">USD Index (30)</a>
+        </li>
+        <li><a href="#EURUSD30" data-toggle="tab">EURUSD (30)</a>
+        </li>
+        <li><a href="#JPYUSD30" data-toggle="tab">JPYUSD (30)</a>
+        </li>
+        <li><a href="#GBPUSD30" data-toggle="tab">GBPUSD (30)</a>
+        </li>
+        <li><a href="#CHFUSD30" data-toggle="tab">CHFUSD (30)</a>
+        </li>
+        <li><a href="#AUDUSD30" data-toggle="tab">AUDUSD (30)</a>
+        </li>
+        <li><a href="#CADUSD30" data-toggle="tab">CADUSD (30)</a>
+        </li>
+
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane" id="DIX30">DIX30</div>
+        <div class="tab-pane" id="EURUSD30">EURUSD30</div>
+        <div class="tab-pane" id="JPYUSD30">JPYUSD30</div>
+        <div class="tab-pane" id="GBPUSD30">GBPUSD30</div>
+        <div class="tab-pane" id="CHFUSD30">CHFUSD30</div>
+        <div class="tab-pane" id="AUDUSD30">AUDUSD30</div>
+        <div class="tab-pane" id="CADUSD30">CADUSD30</div>
+
+      </div>
+
+
+
+    </div>
+
+
+    <div class="tab-pane" id="about">
+
+       <div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+
+      <div class="cover-container">
+
+        
+
+
+        <div class="inner cover">
+          <h1 class="cover-heading">okabe.xyz</h1>
+          <p class="lead">develops fx trading systems and softwares.</p>
+          <p class="lead">We share some of our products to limited clients.</p>
+
+
+          <p class="lead">We are a startup company in Kobe, Japan.　Established in 2014.
+          </p>
+        </div>
+
+        <div class="mastfoot">
+          <div class="inner">
+            <p>okabe.xyz</p>
+            <p><a href="mailto:okabe.xyz@gmail.com">Contact</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript
+
+
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="./js/jquery-2.0.3.min.js"></script>
+  <script src="./js/imagesloaded.pkgd.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/index.bundle.js"></script>
+</body>
+
+</html>

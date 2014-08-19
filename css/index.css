@@ -1,0 +1,73 @@
+.link {
+  cursor: 'pointer';
+  "font-size", "33px";
+  "text-decoration", "underline";
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+#pair {
+  position: fixed;
+  left: 100px;
+  top: 100px;
+  font-size: 50px;
+}
+#rev {
+  position: fixed;
+  left: 100px;
+  top: 150px;
+  font-size: 40px;
+  color: #ff0000;
+}
+#period {
+  position: fixed;
+  left: 100px;
+  top: 200px;
+  font-size: 40px;
+}
+#time {
+  position: fixed;
+  left: 100px;
+  top: 400px;
+  font-size: 20px;
+}
+.clock {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 00px auto 0 auto;
+  background: url(../images/clockface.png);
+  list-style: none;
+}
+.sec,
+.min,
+.hour {
+  position: absolute;
+  width: 15px;
+  height: 300px;
+  top: 0px;
+  left: 142px;
+}
+.sec {
+  background: url(../images/sechand.png);
+  z-index: 3;
+}
+.min {
+  background: url(../images/minhand.png);
+  z-index: 2;
+}
+.hour {
+  background: url(../images/hourhand.png);
+  z-index: 1;
+}
+p {
+  text-align: center;
+  padding: 10px 0 0 0;
+  font-size: 30px;
+}
+.table {
+  display: table;
+}
+.cell {
+  display: table-cell
